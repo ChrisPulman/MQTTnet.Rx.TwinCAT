@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTnet.Rx.TwinCAT", "MQTTnet.Rx.TwinCAT\MQTTnet.Rx.TwinCAT.csproj", "{0169C0D8-6781-46CC-B3CF-C64DFE83E2AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionSettings", "SolutionSettings", "{5DFE1810-615F-4BDA-AA3B-0CF67F2D6B9C}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\.github\workflows\BuildOnly.yml = ..\.github\workflows\BuildOnly.yml
+		..\Directory.Build.props = ..\Directory.Build.props
+		..\.github\workflows\dotnet.yml = ..\.github\workflows\dotnet.yml
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+		..\stylecop.json = ..\stylecop.json
+		..\Version.json = ..\Version.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		PreRelease|Any CPU = PreRelease|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0169C0D8-6781-46CC-B3CF-C64DFE83E2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0169C0D8-6781-46CC-B3CF-C64DFE83E2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0169C0D8-6781-46CC-B3CF-C64DFE83E2AF}.PreRelease|Any CPU.ActiveCfg = PreRelease|Any CPU
+		{0169C0D8-6781-46CC-B3CF-C64DFE83E2AF}.PreRelease|Any CPU.Build.0 = PreRelease|Any CPU
+		{0169C0D8-6781-46CC-B3CF-C64DFE83E2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0169C0D8-6781-46CC-B3CF-C64DFE83E2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33962E69-068A-4742-80D6-5CA467C0709C}
+	EndGlobalSection
+EndGlobal
