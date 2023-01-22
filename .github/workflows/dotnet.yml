@@ -70,12 +70,10 @@ jobs:
       id: changelog
 
     - name: Create Release
-      uses: actions/create-release@v1.1.4
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      uses: ncipollo/release-action@v1.12.0
       with:
-          tag_name: ${{ steps.nbgv.outputs.SemVer2 }}
-          release_name: ${{ steps.nbgv.outputs.SemVer2 }}
+          tag: ${{ steps.nbgv.outputs.SemVer2 }}
+          commit: ${{ steps.nbgv.outputs.SemVer2 }}
           body: |
             ${{ steps.changelog.outputs.commitLog }}
 
