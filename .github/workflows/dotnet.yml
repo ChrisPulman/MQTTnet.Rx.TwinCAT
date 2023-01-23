@@ -70,12 +70,16 @@ jobs:
       id: changelog
 
     - name: Create Release
-      uses: ncipollo/release-action@v1.12.0
+      uses: mini-bomba/create-github-release@v1.1.2
       with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ steps.nbgv.outputs.SemVer2 }}
-          commit: ${{ steps.nbgv.outputs.SemVer2 }}
+          prerelease: false
+          name: ${{ steps.nbgv.outputs.SemVer2 }}
           body: |
             ${{ steps.changelog.outputs.commitLog }}
+          Commit message: ${{ env.GIT_MESSAGE }}
+          clear_attachments: true
 
     - name: NuGet Push
       env:
