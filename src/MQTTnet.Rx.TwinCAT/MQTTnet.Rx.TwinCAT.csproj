@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <TargetFrameworks>netstandard2.0;net6.0-windows10.0.17763;net7.0-windows10.0.17763</TargetFrameworks>
@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CP.TwinCATRx" Version="0.7.0" />
+    <PackageReference Include="CP.TwinCATRx" Version="1.0.0" />
     <PackageReference Include="MQTTnet.Rx.Client" Version="0.7.0" />
   </ItemGroup>
 
